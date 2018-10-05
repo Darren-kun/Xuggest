@@ -1,0 +1,1894 @@
+2018-10-02 01:51:31,341 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:629: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+2018-10-02 01:51:55,740 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:629: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+2018-10-02 01:52:08,239 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 01:52:27,442 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 827, in _tunnel
+    (version, code, message) = response._read_status()
+  File "/usr/lib/python3.5/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2018-10-02 01:52:55,440 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:629: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+2018-10-02 01:53:50,663 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 01:56:25,057 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 01:56:45,639 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 589, in urlopen
+    raise SSLError(e)
+requests.packages.urllib3.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 447, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+2018-10-02 01:56:54,942 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:00:55,539 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 589, in urlopen
+    raise SSLError(e)
+requests.packages.urllib3.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 447, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+2018-10-02 02:01:11,147 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:01:58,139 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:02:05,039 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 827, in _tunnel
+    (version, code, message) = response._read_status()
+  File "/usr/lib/python3.5/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2018-10-02 02:02:50,965 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:629: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+2018-10-02 02:05:09,660 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:07:06,550 ERROR into_Sellers_list
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com11', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 299, in into_Sellers_list
+    sellers_list_responses = myrequest_get(url=sellers_list_url,headers=headers)
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 255, in myrequest_get
+    timeout=20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com11', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:07:07,246 ERROR into_Sellers_list
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com11', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 299, in into_Sellers_list
+    sellers_list_responses = myrequest_get(url=sellers_list_url,headers=headers)
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 255, in myrequest_get
+    timeout=20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com11', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:07:07,247 ERROR sellers_list_responses
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/USA_analysis.py", line 1067, in Available
+    sellers_list_responses = into_Sellers_list(sellers_list_url)
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 304, in into_Sellers_list
+    return sellers_list_responses
+UnboundLocalError: local variable 'sellers_list_responses' referenced before assignment
+2018-10-02 02:07:07,339 ERROR USA_USA_second_Analysis
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/use_analysis.py", line 79, in USA_analysis
+    USA_second_Analysis(ASIN=ASIN,stock=Stock,sellers_list_url=sellers_list_url,product_info=product_info,offerListingID=offerListingID)
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/USA_analysis.py", line 1198, in USA_second_Analysis
+    usa_second_product_obj.Available(sellers_list_url=sellers_list_url,ASIN=ASIN)
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/USA_analysis.py", line 1072, in Available
+    etree_html = etree.HTML(sellers_list_responses)
+UnboundLocalError: local variable 'sellers_list_responses' referenced before assignment
+2018-10-02 02:09:21,144 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 589, in urlopen
+    raise SSLError(e)
+requests.packages.urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 447, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:645)
+2018-10-02 02:10:14,946 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 827, in _tunnel
+    (version, code, message) = response._read_status()
+  File "/usr/lib/python3.5/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response',)))
+2018-10-02 02:10:50,163 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:11:21,965 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:629: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+2018-10-02 02:11:41,650 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 589, in urlopen
+    raise SSLError(e)
+requests.packages.urllib3.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 447, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+2018-10-02 02:12:06,161 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 589, in urlopen
+    raise SSLError(e)
+requests.packages.urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 447, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:645)
+2018-10-02 02:12:06,456 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:12:38,155 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:629: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+2018-10-02 02:15:58,441 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 589, in urlopen
+    raise SSLError(e)
+requests.packages.urllib3.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 447, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+2018-10-02 02:17:30,253 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:18:08,244 ERROR into_Sellers_list
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 589, in urlopen
+    raise SSLError(e)
+requests.packages.urllib3.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 299, in into_Sellers_list
+    sellers_list_responses = myrequest_get(url=sellers_list_url,headers=headers)
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 255, in myrequest_get
+    timeout=20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 447, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+2018-10-02 02:19:11,142 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 827, in _tunnel
+    (version, code, message) = response._read_status()
+  File "/usr/lib/python3.5/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response',)))
+2018-10-02 02:19:23,542 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:22:13,548 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:22:59,855 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:24:34,243 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 589, in urlopen
+    raise SSLError(e)
+requests.packages.urllib3.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 447, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+2018-10-02 02:25:58,244 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 589, in urlopen
+    raise SSLError(e)
+requests.packages.urllib3.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 447, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+2018-10-02 02:26:01,967 ERROR into_Sellers_list
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/offer-listing/B06Y8SSQG5/ref=dp_olp_new_mbc?ie=UTF8&condition=new (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 299, in into_Sellers_list
+    sellers_list_responses = myrequest_get(url=sellers_list_url,headers=headers)
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 255, in myrequest_get
+    timeout=20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/offer-listing/B06Y8SSQG5/ref=dp_olp_new_mbc?ie=UTF8&condition=new (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:26:17,459 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:629: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+2018-10-02 02:26:23,744 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:629: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+2018-10-02 02:29:24,444 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 827, in _tunnel
+    (version, code, message) = response._read_status()
+  File "/usr/lib/python3.5/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2018-10-02 02:31:43,845 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 827, in _tunnel
+    (version, code, message) = response._read_status()
+  File "/usr/lib/python3.5/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response',)))
+2018-10-02 02:33:28,261 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:629: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('_ssl.c:629: The handshake operation timed out',)))
+2018-10-02 02:34:27,345 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+2018-10-02 02:35:00,063 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 827, in _tunnel
+    (version, code, message) = response._read_status()
+  File "/usr/lib/python3.5/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2018-10-02 02:36:46,166 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 252, in connect
+    ssl_version=resolved_ssl_version)
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 305, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 589, in urlopen
+    raise SSLError(e)
+requests.packages.urllib3.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 447, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:645)
+2018-10-02 02:38:38,164 ERROR add_Cart
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 555, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 753, in _prepare_proxy
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 230, in connect
+    self._tunnel()
+  File "/usr/lib/python3.5/http/client.py", line 832, in _tunnel
+    message.strip()))
+OSError: Tunnel connection failed: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 610, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 273, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+requests.packages.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Xuggest_scrapy/AMA_ANALYSIS/analysis_request_header.py", line 279, in add_Cart
+    timeout = 20
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 107, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /gp/product/handle-buy-box/ref=dp_start-bbf_1_glance (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 502 Bad Gateway',)))
